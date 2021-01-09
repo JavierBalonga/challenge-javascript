@@ -1,0 +1,18 @@
+{
+  "name": "cp-m1-practice",
+  "version": "1.0.0",
+  "description": "just for practice",
+  "main": "checkpoint.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha ./tests/**.js -w"
+  },
+  "author": "JavierBalonga",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
