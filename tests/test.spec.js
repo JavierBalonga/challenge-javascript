@@ -1,4 +1,4 @@
-;var expect = require("chai").expect;
+;let expect = require("chai").expect;
 
 const {
     exponencial,
