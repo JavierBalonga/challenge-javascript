@@ -118,7 +118,7 @@ function BinarySearchTree(value) {
 
 BinarySearchTree.prototype.size = function () {
     // Declaro una variable que acumula el tamaño
-    var ret = 1;
+    let ret = 1;
     // Si existiera izquierda le sumo su tamaño
     if (this.left) ret += this.left.size();
     // Si existiera derecha le sumo su tamaño
@@ -201,7 +201,7 @@ BinarySearchTree.prototype.breadthFirstForEach = function(cb) {
     // mientras el largo del mismo sea mayor a cero
     // Voy quitando el primer elemento del array 
     // De esta manera cada arbol recorrido va agregando sus subarboles a la ejecucion del for
-    for (var pointers = [this]; pointers.length > 0; pointers.shift()) {
+    for (let pointers = [this]; pointers.length > 0; pointers.shift()) {
         // Llamo al callback con el valor de cada puntero
         cb(pointers[0].value);
         // Y si tubiera derecha o izquierda lo agrego al array
